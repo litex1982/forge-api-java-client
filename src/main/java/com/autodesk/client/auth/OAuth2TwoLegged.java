@@ -80,7 +80,7 @@ public class OAuth2TwoLegged implements Authentication {
 
     // makes request and checks response code for 200
     private String execute(HttpRequestBase request) throws ClientProtocolException, IOException {
-        HttpClient httpClient = HttpClientBuilder.create().build();
+        HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
         HttpResponse response = httpClient.execute(request);
 
         HttpEntity entity = response.getEntity();
