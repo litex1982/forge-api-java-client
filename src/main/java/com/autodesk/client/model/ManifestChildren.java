@@ -52,7 +52,9 @@ public class ManifestChildren   {
 
     GEOMETRY("geometry"),
 
-    VIEW("view");
+    VIEW("view"),
+	  
+	FOLDER("folder");
 
     private String value;
 
@@ -82,6 +84,8 @@ public class ManifestChildren   {
     MANIFEST("manifest"),
 
     THUMBNAIL("thumbnail"),
+    
+    VIEWABLE("viewable"),
 
     IFC("ifc"),
 
